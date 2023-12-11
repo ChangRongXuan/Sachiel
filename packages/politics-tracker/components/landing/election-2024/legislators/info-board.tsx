@@ -119,7 +119,7 @@ export default function InfoBoard({
       <Content>
         {sortedAreas.map((area: LegislatorArea) => {
           const candidates = formattedCandidates(area.candidates)
-          const order = area.order === 0 ? '全國' : `第 0${area.order} 選舉區`
+          const order = area.order === 0 ? '全國' : `第 0${area.order} 選區`
           return (
             <ListItemMobile
               order={0}
@@ -149,7 +149,7 @@ export default function InfoBoard({
 
         {sortedAreas.map((area: LegislatorArea) => {
           const candidates = formattedCandidates(area.candidates)
-          const order = area.order === 0 ? '全國' : `第 0${area.order} 選舉區`
+          const order = area.order === 0 ? '全國' : `第 0${area.order} 選區`
           return (
             <ListItemDesktop
               count={area.done}
